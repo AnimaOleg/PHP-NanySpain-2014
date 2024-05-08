@@ -1,0 +1,45 @@
+<html>
+<head>
+<!-- styles needed by jScrollPane -->
+<link type="text/css" href="style/jquery.jscrollpane.css" rel="stylesheet" media="all" />
+
+<!-- latest jQuery direct from google's CDN -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+
+<!-- the mousewheel plugin - optional to provide mousewheel support -->
+<script type="text/javascript" src="jquery.mousewheel.js"></script>
+
+<!-- the jScrollPane script -->
+<script type="text/javascript" src="jquery.jscrollpane.min.js"></script>
+<script>
+	$(function()
+	{
+		$('.jspPane').jScrollPane();
+	});
+</script>
+	<link href="jquery.jscrollpane.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+	<div class="jspContainer">
+		<div class="jspPane">
+			<div class="jspVerticalBar">
+				<div class="jspTrack">
+					<div class="jspArrow"></div>
+					<div class="jspDrag">---</div>
+					<div class="jspArrow2"></div>
+				</div>
+			</div>
+			
+			<div class="jspHorizontalBar">
+				<div class="jspTrack">
+					<div class="jspArrow"></div>
+					<div class="jspDrag">---</div>
+					<div class="jspArrow2"></div>
+				</div>
+			</div>
+			<div class="jspCap"></div>
+		</div>
+	</div>
+</body>
+</html>
